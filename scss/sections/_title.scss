@@ -1,0 +1,49 @@
+#middle {
+    padding-top: 100px;
+
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 63px;
+
+        .wrapper__left {
+            .laptop {
+                width: 200px;
+                height: 200px;
+                overflow: hidden;
+                background-color: #291C52;
+                border-radius: 30%;
+            }
+        }
+
+        .wrapper__title {
+            display: flex;
+            flex-direction: column;
+
+            .slaptop {
+                width: 124px;
+                height: 124px;
+                margin-left: 550px;
+                animation-name: animateHiding;
+                animation-duration: 1.0s;
+                animation-timing-function: ease;
+                animation-fill-mode: forwards;
+                animation-direction: alternate;
+            }
+
+            h2 {
+                font-size: 48px;
+                font-weight: 700;
+                line-height: 84px;
+                text-align: right;
+                color: #fff;
+
+                @font-face {
+                    font-family: "Helvetica Neue";
+                    src: url(../../assets/fonts/HelveticaNeueBold.otf);
+                }
+            }
+        }
+    }
+}

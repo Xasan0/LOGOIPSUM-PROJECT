@@ -1,0 +1,104 @@
+// @charset "utf-8";
+@import "./scss/export";
+
+#clients {
+    padding-top: 100px;
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+
+        .wrapper__title {
+            .title {
+                font-family: Manrope, sans-serif;
+                font-size: 48px;
+                font-weight: 800;
+                line-height: 64px;
+                text-align: center;
+                color: #fff;
+            }
+
+            .description {
+                font-family: "Helvetica Neue", sans-serif;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 32px;
+                text-align: center;
+                color: #fff;
+
+                @font-face {
+                    font-family: "Helvetica Neue";
+                    src: url(../../assets/fonts/HelveticaNeueBold.otf);
+                }
+            }
+        }
+
+        .card_logos {
+            display: flex;
+
+            align-items: center;
+
+            .first_list {
+                display: flex;
+                flex-direction: column;
+
+                .item-card {
+                    background-color: #fff;
+                    width: 170px;
+                    height: 95px;
+                    border-radius: 15px;
+                }
+            }
+
+            .second_list {
+                display: flex;
+                flex-direction: column;
+
+                .item-card {
+                    background-color: #fff;
+                    width: 170px;
+                    height: 95px;
+                    border-radius: 15px;
+                }
+            }
+
+            .third_list {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .forth_list {
+                display: flex;
+                flex-direction: column;
+
+                .item-card {
+                    background-color: #fff;
+                    width: 170px;
+                    height: 95px;
+                    border-radius: 15px;
+                }
+            }
+
+            .fifth_list {
+                display: flex;
+                flex-direction: column;
+
+                .item-card {
+                    background-color: #fff;
+                    width: 170px;
+                    height: 95px;
+                    border-radius: 15px;
+                }
+            }
+        }
+
+    }
+}
+
+
+.footer {
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+}

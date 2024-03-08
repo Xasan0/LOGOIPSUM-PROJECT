@@ -1,0 +1,94 @@
+#intro-middle {
+    padding-top: 250px;
+
+
+    .wrapper {
+        display: flex;
+        gap: 100px;
+        align-items: start;
+
+        &__left {
+            max-width: 563px;
+
+
+            h1 {
+                font-size: 54px;
+                color: #fff;
+            }
+
+            p {
+                font-size: 22px;
+                color: #fff;
+                margin-bottom: 48px;
+            }
+
+            button {
+                @extend %btnPrimary;
+                padding: 18px 36px;
+            }
+        }
+
+        &__right {
+            flex-grow: 2;
+
+            position: relative;
+            background-image: url("../../assets/images/cicle.svg");
+            width: 500px;
+            height: 500px;
+            background-repeat: no-repeat;
+            background-position: center;
+
+            img {
+                position: absolute;
+
+                &:nth-child(1) {
+                    top: -82px;
+                    left: 29px;
+                    animation-name: animateObject;
+                    animation-duration: 1.0s;
+                    animation-iteration-count: infinite;
+                    animation-timing-function: ease;
+                    animation-fill-mode: forwards;
+                    animation-direction: alternate;
+
+                }
+
+                &:nth-child(2) {
+                    bottom: -129px;
+                    left: -7px;
+                    animation-name: moveAnimate;
+                    animation-duration: 0.9s;
+                    animation-iteration-count: infinite;
+                    animation-timing-function: ease;
+                    animation-fill-mode: forwards;
+                    animation-direction: alternate;
+                    animation-delay: 0.7s;
+                }
+
+                &:nth-child(3) {
+                    top: -58px;
+                    right: 56px;
+                    animation-name: animateObject;
+                    animation-duration: 1.1s;
+                    animation-iteration-count: infinite;
+                    animation-timing-function: ease;
+                    animation-fill-mode: forwards;
+                    animation-direction: alternate;
+                    animation-delay: 0.5s;
+                }
+
+                &:nth-child(4) {
+                    bottom: 128px;
+                    right: -38px;
+                    animation-name: secondaryAnimate;
+                    animation-duration: 1.5s;
+                    animation-iteration-count: infinite;
+                    animation-timing-function: ease;
+                    animation-fill-mode: forwards;
+                    animation-direction: alternate;
+                    animation-delay: 0.3s;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,44 @@
+@keyframes animateObject {
+    from {
+        transform: translateY(-24px);
+    }
+
+    to {
+        transform: translateY(30);
+    }
+}
+
+@keyframes secondaryAnimate {
+    from {
+        transform: translateY(-24px);
+    }
+
+    to {
+        transform: translateX(30px);
+    }
+}
+
+@keyframes animateHiding {
+
+    from {
+        // transform: translateY(-25px);
+        transform: rotateX('45deg');
+    }
+
+    to {
+        transform: rotateX('80deg');
+
+    }
+
+}
+
+@keyframes moveAnimate {
+    from {
+        transform: translateX(50px);
+    }
+
+
+    to {
+        transform: translateY(-24px);
+    }
+}
